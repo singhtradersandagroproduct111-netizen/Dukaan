@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singh Traders - Aarti Gold</title>
+    <style>
+        :root {
+            --primary: #ffcc00;
+            --dark: #111111;
+            --light: #f9f9f9;
+            --gray: #222222;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--dark); color: white; }
+        header { background-color: var(--gray); padding: 30px 20px; text-align: center; border-bottom: 3px solid var(--primary); }
+        .logo-container { margin-bottom: 15px; }
+        .logo-placeholder { font-size: 24px; color: var(--primary); font-weight: bold; letter-spacing: 2px; }
+        .marquee-container { background: var(--primary); color: var(--dark); padding: 10px 0; font-weight: bold; overflow: hidden; white-space: nowrap; }
+        .marquee-text { display: inline-block; animation: marquee 15s linear infinite; }
+        @keyframes marquee { 0% { transform: translate3d(100%, 0, 0); } 100% { transform: translate3d(-100%, 0, 0); } }
+        .hero { text-align: center; padding: 50px 20px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1574325131866-ae83c03295d2?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; }
+        .hero h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 10px; }
+        .products-section { padding: 50px 20px; max-width: 1200px; margin: 0 auto; }
+        .products-section h2 { text-align: center; margin-bottom: 40px; color: var(--primary); font-size: 2rem; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+        .product-card { background-color: var(--gray); border: 1px solid #333; border-radius: 10px; padding: 25px; text-align: center; transition: 0.3s; }
+        .product-card:hover { border-color: var(--primary); transform: translateY(-5px); }
+        .product-icon { font-size: 3rem; margin-bottom: 15px; display: inline-block; }
+        .product-card h3 { margin-bottom: 10px; font-size: 1.3rem; }
+        .pack-size { color: var(--primary); font-weight: bold; margin-bottom: 15px; font-size: 1.1rem; }
+        .tag { background: #333; padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; color: #aaa; }
+        .contact-section { background-color: var(--gray); padding: 50px 20px; text-align: center; border-top: 3px solid var(--primary); }
+        .contact-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px; }
+        .contact-card { background: var(--dark); padding: 20px; border-radius: 8px; min-width: 280px; border: 1px solid #333; }
+        .contact-card h3 { color: var(--primary); margin-bottom: 10px; }
+        .btn { display: inline-block; background: #25D366; color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: bold; margin-top: 15px; }
+        .btn-mail { background: var(--primary); color: var(--dark); }
+        footer { background: #050505; text-align: center; padding: 20px; color: #666; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <!-- Jab logo image ho, toh src="logo.png" chalega. Abhi text dikhega -->
+            <img src="logo.png" alt="Singh Traders Logo" onerror="this.style.display='none'; document.getElementById('logo-text').style.display='block';" style="height: 70px; max-width: 100%; margin-bottom: 10px;">
+            <div id="logo-text" class="logo-placeholder" style="display:none;">SINGH TRADERS</div>
+        </div>
+        <p style="color: #aaa; font-style: italic;">Aarti Gold Agro Products</p>
+    </header>
+
+    <div class="marquee-container">
+        <div class="marquee-text">
+            🌾 Aarti Gold Rice 🥇 Premium Quality 🌾 Chakki Fresh Atta 🌾 Pure Chana Besan 🌾 High Protein Sattu 🌾 Kachi Ghani Mustard Oil 🌾 Super Wholesaler Price!
+        </div>
+    </div>
+
+    <section class="hero">
+        <h1>Singh Traders & Agro Products</h1>
+        <p>Premium Quality Ke Wholesale Agro Products - Directly From Manufacturer</p>
+    </section>
+
+    <section class="products-section">
+        <h2>Our Premium Range</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <span class="product-icon">🌾</span>
+                <h3>Aarti Gold Rice</h3>
+                <p class="pack-size">26 KG Pack</p>
+                <span class="tag">Premium Quality</span>
+            </div>
+            <div class="product-card">
+                <span class="product-icon">🍚</span>
+                <h3>Aarti Gold Atta</h3>
+                <p class="pack-size">5 KG Pack</p>
+                <span class="tag">Chakki Fresh</span>
+            </div>
+            <div class="product-card">
+                <span class="product-icon">🟡</span>
+                <h3>Aarti Gold Besan</h3>
+                <p class="pack-size">200 Gram Pack</p>
+                <span class="tag">Pure Chana Dal</span>
+            </div>
+            <div class="product-card">
+                <span class="product-icon">💪</span>
+                <h3>Aarti Gold Sattu</h3>
+                <p class="pack-size">200 Gram Pack</p>
+                <span class="tag">High Protein</span>
+            </div>
+            <div class="product-card">
+                <span class="product-icon">🛢️</span>
+                <h3>Aarti Gold Mustard Oil</h3>
+                <p class="pack-size">1 Litre Pack</p>
+                <span class="tag">Kachi Ghani</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact Us For Orders</h2>
+        <p>Wholesale aur Bulk orders ke liye haseen rates par sampark karein</p>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>WhatsApp Order</h3>
+                <p>Direct chat karein aur order book karein</p>
+                <a href="https://wa.me/91XXXXXXXXXX" class="btn">WhatsApp Pe Order Karein</a>
+            </div>
+            <div class="contact-card">
+                <h3>Email Us</h3>
+                <p>Official queries ke liye mail karein</p>
+                <a href="mailto:singhtradersandagroproducts@gmail.com" class="btn btn-mail">singhtradersandagroproducts@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Singh Traders & Agro Products. All Rights Reserved.</p>
+        <p>Email: <a href="mailto:singhtradersandagroproducts@gmail.com" style="color: var(--primary); text-decoration: none;">singhtradersandagroproducts@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
